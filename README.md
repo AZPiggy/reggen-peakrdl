@@ -40,7 +40,7 @@ reggen/
 
 The input Excel file input.xlsx should include the following columns (See examples for each in input.xlsx):
 
-`` RegName	 Offset	  FieldName	  BitRange   Reset   BehaviorType ``
+`` RegName  Offset  FieldName  BitRange  Reset  BehaviorType ``
 
 **Supported BehaviorType values:**
 
