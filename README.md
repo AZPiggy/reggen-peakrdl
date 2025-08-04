@@ -16,7 +16,9 @@ This project provides a lightweight, Excel-driven workflow to generate SystemRDL
 
 You can install all required packages using:
 
-&nbsp;	pip install peakrdl peakrdl-regblock pandas openpyxl
+```
+pip install peakrdl peakrdl-regblock pandas openpyxl
+```
 
 ### Folder Structure
 
@@ -24,7 +26,7 @@ reggen/
 
 ├── input.xlsx         # Input register spec in Excel format
 
-├── rdl\_generator.py   # Python script to generate SystemRDL and call PeakRDL
+├── rdl\_generator.py  # Python script to generate SystemRDL and call PeakRDL
 
 ├── output/
 
@@ -38,7 +40,7 @@ reggen/
 
 The input Excel file input.xlsx should include the following columns (See examples for each in input.xlsx):
 
-RegName	 Offset	  FieldName	  BitRange   Reset   BehaviorType
+`` RegName	 Offset	  FieldName	  BitRange   Reset   BehaviorType ``
 
 **Supported BehaviorType values:**
 
@@ -56,7 +58,9 @@ RegName	 Offset	  FieldName	  BitRange   Reset   BehaviorType
 
 **Run the generator script**
 
-&nbsp;	python rdl\_generator.py
+```
+python rdl\_generator.py
+```
 
 **This script will:**
 
@@ -82,7 +86,9 @@ RegName	 Offset	  FieldName	  BitRange   Reset   BehaviorType
 
 \- If peakrdl is not recognized in terminal, try running with full path:
 
-&nbsp;	python -m peakrdl ...
+```
+python -m peakrdl ...
+```
 
 \- Bit range must be valid: for single-bit fields use \[0], for multi-bit use \[3:0].
 
