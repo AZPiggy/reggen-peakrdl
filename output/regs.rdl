@@ -1,0 +1,18 @@
+addrmap top {
+  reg {
+    field {
+        sw = rw; hw = rw; woclr; reset = 1;
+    } ENABLE;
+    field {
+        sw = rw; hw = rw; we; reset = 0;
+    } FLAG[1];
+    field {
+        sw = rw; hw = rw; woclr; reset = 0;
+    } RESET_ALL[2];
+  } CTRL @ 0x00;
+  reg {
+    field {
+        sw = rw; hw = rw; we; reset = 0;
+    } FLAG;
+  } TEST @ 0x10;
+};
